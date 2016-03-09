@@ -1,0 +1,13 @@
+$ git log //check the previous commits
+
+$ git log --author="name"//show all commits by name person
+
+$ git status // know current branch & know which files are not yet displayed or commited
+ 
+$ git add filename //the workflow is working copy > staging area > repository => now filename is in staging area
+
+//may check if filename is added or not by using git status
+$ git commit -m "filename is added"
+
+/try git log to see commits
+$ git push origin master

@@ -1,0 +1,17 @@
+
+The example I think a lot of people asking this question are after is this.
+ If you are in the directory you want the contents of the git repository dumped to, run:
+
+git clone git@github.com:whatever .
+The "." at the end specifies the current folder as the checkout folder.
+
+
+go into folder.. if folder is empty, then
+
+git clone git@github.com:whatever .
+else
+
+git init
+git remote add origin PATH/TO/REPO
+git fetch
+git checkout -t origin/master

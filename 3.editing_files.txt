@@ -6,6 +6,6 @@ $ git add mod_file
 
 $ git status //tells the file is modified and changes have been recorded
 
-$ git commit -m "File changed to ..."
+$ git commit -m "Change has been made"
 
 $ git push origin master 

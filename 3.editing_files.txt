@@ -1,0 +1,11 @@
+//make changes to file
+
+$ git status //tells the file is modified
+
+$ git add mod_file
+
+$ git status //tells the file is modified and changes have been recorded
+
+$ git commit -m "File changed to ..."
+
+$ git push origin master 

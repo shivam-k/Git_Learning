@@ -1,0 +1,333 @@
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub $ git init
+Initialized empty Git repository in /home/kaustubh/Desktop/GitHub /.git/
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub $ git clone https://github.com/kaustubhhiware/Git_Learning.git
+Cloning into 'Git_Learning'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Git_Learning/
+
+nothing added to commit but untracked files present (use "git add" to track)
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub $ git add Git_Learning
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub $ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   Git_Learning
+
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub $ cd Git_Learning
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ ls
+README.md
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	 1.create a repo
+
+nothing added to commit but untracked files present (use "git add" to track)
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	 1.create_a_repo
+
+nothing added to commit but untracked files present (use "git add" to track)
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add .create_a_repo.txt
+fatal: pathspec '.create_a_repo.txt' did not match any files
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add 1.create_a_repo.txt
+fatal: pathspec '1.create_a_repo.txt' did not match any files
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ ls
+ 1.create_a_repo  README.md
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	 1.create_a_repo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add 1.create_a_repo.txt
+fatal: pathspec '1.create_a_repo.txt' did not match any files
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add .
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:    1.create_a_repo.txt
+
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git commit -m "First file - how to create a repo"
+[master 656c972] First file - how to create a repo
+ 1 file changed, 11 insertions(+)
+ create mode 100644  1.create_a_repo.txt
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git log
+commit 656c97205a99afc4a0ab57d2d9749a211b72e654
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:22:11 2016 +0530
+
+    First file - how to create a repo
+
+commit 03249b5588bd103cf9fef65eaec9d6b151e27e47
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:08:48 2016 +0530
+
+    Initial commit
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git push origin master
+Username for 'https://github.com': kaustubhhiware
+Password for 'https://kaustubhhiware@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 449 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kaustubhhiware/Git_Learning.git
+   03249b5..656c972  master -> master
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git log
+commit 656c97205a99afc4a0ab57d2d9749a211b72e654
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:22:11 2016 +0530
+
+    First file - how to create a repo
+
+commit 03249b5588bd103cf9fef65eaec9d6b151e27e47
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:08:48 2016 +0530
+
+    Initial commit
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	2.adding_files.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add 2.addin_file.txt
+fatal: pathspec '2.addin_file.txt' did not match any files
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add 2.adding_file.txt
+fatal: pathspec '2.adding_file.txt' did not match any files
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ clear
+
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add .
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   2.adding_files.txt
+
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git commit -m "Adding files to existing repo"
+[master 8a73b3e] Adding files to existing repo
+ 1 file changed, 13 insertions(+)
+ create mode 100644 2.adding_files.txt
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git log
+commit 8a73b3ec8cbd48d83d2822fb110a7a7dcff7e075
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:25:22 2016 +0530
+
+    Adding files to existing repo
+
+commit 656c97205a99afc4a0ab57d2d9749a211b72e654
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:22:11 2016 +0530
+
+    First file - how to create a repo
+
+commit 03249b5588bd103cf9fef65eaec9d6b151e27e47
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:08:48 2016 +0530
+
+    Initial commit
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git push origin master
+Username for 'https://github.com': kaustubhhiware
+Password for 'https://kaustubhhiware@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 592 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/kaustubhhiware/Git_Learning.git
+   656c972..8a73b3e  master -> master
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	3.editing_files.txt
+	cloning_into_specific_location.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add 3.editing_files.txt
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   3.editing_files.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	cloning_into_specific_location.txt
+
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git commit -m "Adding file to demonstrate change"
+[master 66be600] Adding file to demonstrate change
+ 1 file changed, 11 insertions(+)
+ create mode 100644 3.editing_files.txt
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	cloning_into_specific_location.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add cloning_into_specific_location.txt
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   cloning_into_specific_location.txt
+
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git commit -m "Creating local copy by convenience"
+[master 21cbf6e] Creating local copy by convenience
+ 1 file changed, 17 insertions(+)
+ create mode 100644 cloning_into_specific_location.txt
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git push origin master
+Username for 'https://github.com': kaustubhhiware
+Password for 'https://kaustubhhiware@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1017 bytes | 0 bytes/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+To https://github.com/kaustubhhiware/Git_Learning.git
+   8a73b3e..21cbf6e  master -> master
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   3.editing_files.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	3.editing_files.txt~
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   3.editing_files.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git add 3.editing_files.txt
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   3.editing_files.txt
+
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git commit -m "Edited existing file "
+[master f70c572] Edited existing file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git log
+commit f70c5722b5637e94169a0b890ecd0266a8204384
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:30:02 2016 +0530
+
+    Edited existing file
+
+commit 21cbf6e588b40b7a3e864192970330115f79b9e6
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:28:26 2016 +0530
+
+    Creating local copy by convenience
+
+commit 66be600483b73e80e0e2cbdf9a76856cef21dbb8
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:27:21 2016 +0530
+
+    Adding file to demonstrate change
+
+commit 8a73b3ec8cbd48d83d2822fb110a7a7dcff7e075
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:25:22 2016 +0530
+
+    Adding files to existing repo
+
+commit 656c97205a99afc4a0ab57d2d9749a211b72e654
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:22:11 2016 +0530
+
+    First file - how to create a repo
+
+commit 03249b5588bd103cf9fef65eaec9d6b151e27e47
+Author: Kaustubh Hiware <hiwarekaustubh@googlemail.com>
+Date:   Wed Mar 9 09:08:48 2016 +0530
+
+    Initial commit
+
+[1]+  Stopped                 git log
+kaustubh@kaustubh-ubuntu:~/Desktop/GitHub /Git_Learning$ git push origin master
+Username for 'https://github.com': kaustubhhiware
+Password for 'https://kaustubhhiware@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/kaustubhhiware/Git_Learning.git
+   21cbf6e..f70c572  master -> master
+

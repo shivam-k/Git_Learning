@@ -1,0 +1,13 @@
+git remote add upstream <main repo link>
+//set a remote
+
+git fetch upstream
+//saves new changes to upstream / master
+
+git checkout master
+//go to your master branch
+
+git merge upstrem/master
+//keep your changes and sync your local repo with the cuurent updated repo
+
+git push <remote_name> <branch_name>

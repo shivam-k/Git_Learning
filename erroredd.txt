@@ -1,3 +1,7 @@
 Let us assume for now this is a working file which we are working on
 
 We'll attempt to modify this and then reset the file using the 5th file
+
+Now , we have made a mistake in this file , which we are willing to correct , 
+but that error is found after adding the file(2nd log file)
+Now , this  text should be removed.

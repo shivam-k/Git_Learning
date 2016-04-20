@@ -1,0 +1,12 @@
+$git rm remove_filename//remove unnecessary files
+
+//editing files
+$git add new_name
+
+$git rm old_name
+
+//moving via terminal
+$git mv src destination
+
+//directly commit modified files
+$ git commit -am "Message"

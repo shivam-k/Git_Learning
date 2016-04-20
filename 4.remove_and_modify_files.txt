@@ -6,4 +6,7 @@ $git add new_name
 $git rm old_name
 
 //moving via terminal
-$git move src destination
+$git mv src destination
+
+//directly commit modified files
+$ git commit -am "Message"

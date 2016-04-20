@@ -2,6 +2,8 @@
 
 $ git status //tells the file is modified
 
+$ git diff//tells what has been changed
+
 $ git add mod_file
 
 $ git status //tells the file is modified and changes have been recorded

@@ -1,0 +1,5 @@
+$git rm remove_filename//remove unnecessary files
+
+//editing files
+$git add new_name
+

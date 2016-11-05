@@ -1,0 +1,9 @@
+Say you want to revert  a folder ff
+
+git log ff
+
+gives all commits related to that folder
+
+say commit version 920ae is the one you want to revert it to.
+
+git checkout 920ae -- ff
